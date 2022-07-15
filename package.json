@@ -1,0 +1,23 @@
+{
+  "name": "rcr",
+  "version": "0.0.1",
+  "description": "rcr cors proxy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {},
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "cors",
+    "cross",
+    "origin",
+    "crossorigin"
+  ]
+}
