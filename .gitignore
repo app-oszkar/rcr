@@ -1,0 +1,9 @@
+*.swp
+*.tmp
+*.log
+
+coverage/
+node_modules/
+.idea/
+
+*.tar.gz
