@@ -5,17 +5,20 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
-        {
-          "src": "/(.*)",
-          "methods": ["GET", "POST", "OPTIONS"],
-          "headers": {
-           "Access-Control-Allow-Origin": "*",
-           "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
-           "Access-Control-Allow-Credentials": "true"
-               },
-          "dest": "server.js"
-          "continue": true 
-        }
-      ]
+  "routes": [
+    {
+      "src": ".*",
+      "methods": ["GET", "POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "dest": "server.js",
+      "continue": true
+    },
+    {
+      "src": ".*", "methods": ["GET", "OPTIONS"], "dest": "server.js"
+    }
+  ]
 }
